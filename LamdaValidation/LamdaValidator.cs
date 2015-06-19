@@ -1,11 +1,9 @@
 ﻿using DecoratorValidation.Core;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DecoratorValidation.LamdaValidation.Validators
 {
+    [Obsolete("Use the correctly spelled LambdaValidator instead.")]
     public class LamdaValidator<T> : ValidatorDecorator<T>
     {
         private Func<T, bool> _predicate;
